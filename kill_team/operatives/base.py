@@ -21,5 +21,13 @@ class BaseOperative:
         self.base = base
         self.keywords = keywords
 
+        self.x = 0
+        self.y = 0
 
 
+class BaseTeam:
+    def __init__(self):
+        self.operatives = []
+
+    def add_operative(self, operative: BaseOperative):
+        self.operatives.append(operative)
